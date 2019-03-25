@@ -1,6 +1,6 @@
 # Node Thread Pool
 
-**使用worker_threads替换child_process～**
+**使用worker_threads(试验性，非标准)替换child_process～**
 
 ## ✨ Features
 
@@ -19,7 +19,7 @@
 ## 📦 安装
 
 ```bash
-npm install node-thread-pool
+npm install node-workerthread-pool
 ```
 
 ## 🔨使用
