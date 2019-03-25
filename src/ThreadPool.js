@@ -85,12 +85,11 @@ ThreadPool.prototype.addThread = function() {
 }
 ThreadPool.prototype.listenThreadState = function(workThread, params) {
   const { worker, subChannel } = workThread.thread
-  worker.postMessage(params)
   worker.postMessage({ workerPort: subChannel.port1}, [subChannel.port1])
+  worker.postMessage(params)
   subChannel.port2.on('message', message => {
     if (message === 'finish') {
       workThread.finishTask()
-      console.log(this.count)
       this.count++
     } else if (message === 'failed') {
       this.taskParamsTodo.unshift(params)
