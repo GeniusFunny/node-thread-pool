@@ -7,7 +7,7 @@ for (let i = 0; i < 1000; i++) {
 }
 // 创建进程池实例
 const threadPool = new ThreadPool({
-  maxParallelThread: 2,
+  maxParallelThread: 50,
   timeToClose: 60 * 1000,
   dependency: `const fs = require('fs')`,
   workDir: __dirname,
