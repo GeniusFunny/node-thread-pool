@@ -1,0 +1,25 @@
+{
+  "name": "node-thread-pool",
+  "version": "0.1.0",
+  "description": "a simple thread pool for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node demo/index.js --experimental-worker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeniusFunny/node-thread-pool.git"
+  },
+  "keywords": [
+    "Node.js",
+    "threadpool",
+    "worker_threads"
+  ],
+  "author": "GeniusFunny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeniusFunny/node-thread-pool/issues"
+  },
+  "homepage": "https://github.com/GeniusFunny/node-thread-pool#readme"
+}
