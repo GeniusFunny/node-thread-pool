@@ -1,6 +1,6 @@
 {
-  "name": "node-thread-pool",
-  "version": "0.1.0",
+  "name": "thread-pool",
+  "version": "1.0.0",
   "description": "a simple thread pool for Node.js",
   "main": "index.js",
   "scripts": {
